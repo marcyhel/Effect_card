@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Follows Mouse Cursor</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#fortunas"><img src="icons/5.png" class="icons"></a></li>
+        <li><a href="#talarce"><img src="icons/1.png" class="icons"></a></li>
+        <li><a href="#cizig"><img src="icons/2.png" class="icons"></a></li>
+        <li><a href="#cogna"><img src="icons/3.png" class="icons"></a></li>
+        <li><a href="#vix"><img src="icons/4.png" class="icons"></a></li>
+      </ul>
+    </nav>
+   
+    <div class='corpo'>
+      <div class='categorias'>
+        <label class="b-contain" onclick="checked_all(this)" >
+          <span>Tudo</span>
+          <input class="messageCheckbox" type="checkbox" value="tudo" checked>
+          <div class="b-input"></div>
+        </label>
+
+        <label for="" id='label'> </label>
+
+        <label class="b-contain" onclick="filter_categoria()">
+          <span>Conscritos</span>
+          <input class="messageCheckbox" type="checkbox" value="conscrito" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Artefatos</span>
+          <input class="messageCheckbox" type="checkbox" value="artefato" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Maestrias</span>
+          <input class="messageCheckbox" type="checkbox" value="maestria" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Armadilha</span>
+          <input class="messageCheckbox" type="checkbox" value="armadilha" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Realidade</span>
+          <input class="messageCheckbox" type="checkbox" value="realidade" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Mercenario</span>
+          <input class="messageCheckbox" type="checkbox" value="mercenario" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Quebrador</span>
+          <input class="messageCheckbox" type="checkbox" value="quebrador" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Evento</span>
+          <input class="messageCheckbox" type="checkbox" value="evento" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Impacto</span>
+          <input class="messageCheckbox" type="checkbox" value="impacto" checked>
+          <div class="b-input"></div>
+        </label>
+
+
+        <label for="" id='label'> Fortunas</label>
+
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Fundidas</span>
+          <input class="messageCheckbox" type="checkbox" value="fundidas" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Basica</span>
+          <input class="messageCheckbox" type="checkbox" value="basica" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Beta</span>
+          <input class="messageCheckbox" type="checkbox" value="beta" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Codigo</span>
+          <input class="messageCheckbox" type="checkbox" value="codigo" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Dilema</span>
+          <input class="messageCheckbox" type="checkbox" value="dilema" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Fragmento</span>
+          <input class="messageCheckbox" type="checkbox" value="fragmento" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>Vortice</span>
+          <input class="messageCheckbox" type="checkbox" value="vortice" checked>
+          <div class="b-input"></div>
+        </label>
+        <label class="b-contain"onclick="filter_categoria()">
+          <span>El</span>
+          <input class="messageCheckbox" type="checkbox" value="el" checked>
+          <div class="b-input"></div>
+        </label>
+
+       
+        
+      </div>
+      <div class='listas'>
+        <div id="my-div"></div>
+        <div class="logo-g" id="talarce">
+          <img src="icons/1.png"  >
+        </div>
+        <div id='list' class="list"></div>
+
+        <div class="logo-g" id="cizig">
+          <img src="icons/2.png"   >
+        </div> 
+        <div id='listfogo' class="list"></div>
+
+        <div class="logo-g" id="cogna">
+          <img src="icons/3.png"   >
+        </div> 
+        <div id='listcogna' class="list"></div>
+
+        <div class="logo-g" id="vix">
+          <img src="icons/4.png"   >
+        </div> 
+        <div id='listvix' class="list"></div>
+
+        <div class="logo-g" id="fortunas">
+          <img src="icons/5.png"   >
+        </div> 
+        <div id='listfortunas' class="list"></div>
+      </div>
+    </div>
+    
+
+    
+   
+    
+   
+   
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
